@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 800px;
+        }
+        table td, table th {
+            border: 1px solid blue;
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        table caption {
+            caption-side: bottom;
+            text-align: center;
+            font-style: italic;
+            font-size: 10px;
+            margin: 5px 0;
+        }
+
+        table th {
+            background: rgb(238, 122, 13);
+        }
+
+        tfoot td {
+            font-style:oblique;
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de preços</h1>
+<div class="responsive-table">
+    <table>
+        <caption>Tabela de preços de frutas.</caption>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Valor de Compra</th>
+                <th>Valor de Venda</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Maçã</td>
+                <td>R$0,50</td>
+                <td>R$0,80</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <td>Goiaba</td>
+                <td>R$0,90</td>
+                <td>R$1,20</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <td>Melancia</td>
+                <td>R$1,50</td>
+                <td>R$2,00</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
+    
+</body>
+</html>

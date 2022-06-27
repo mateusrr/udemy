@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista e menus</title>
+
+    <style>
+    
+        body{
+            background: rgba(168, 168, 168, 0.322);
+        }
+        
+        nav {
+            
+            background: rgb(190, 126, 5);
+            border-radius: 10px;
+            
+        }
+
+        nav a {
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 
+            'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+            'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration: none;
+            font-size: 30px;
+            display: block;
+            padding: 10px;
+            text-transform: uppercase;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        
+        }
+
+        nav a:hover {
+            background: rgba(185, 185, 185, 0.925);
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <ul>
+        <li>item 0</li>
+        <li>item 0.1</li>
+    </ul>
+
+    <ol type="A">
+        <li>item 1</li>
+    </ol>
+
+    <dl>
+        <dt>coffee</dt>
+        <dd>bebida</dd>
+    </dl>
+</body>
+</html>

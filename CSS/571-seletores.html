@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        /*Seletor Tag normal*/
+        h1 {
+            background-color: goldenrod;
+        }
+        /*Classe - definido na tag*/
+        .descricao {
+            font-size: 20px;
+            color: blue;
+        }
+        /*ID - definido também na tag*/
+        #item1 {
+            color: greenyellow;
+        }
+        /*universal*/
+        * {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        /*irmão adjacente*/
+        li:first-child + li {
+            background-color: orange;
+        }
+        /*combinador filho*/
+        ol > li:first-child {
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletores CSS</h1>
+    <p class="descricao">Exemplos práticos para o aprendizado.</p>
+        <ul>
+            <li>item A</li>
+            <li>item B</li>
+            <li>item C</li>
+        </ul>
+
+        <ol>
+            <li id="item1">item</li>
+            <li>item</li>
+            <li>item</li>
+        </ol>
+</body>
+</html>

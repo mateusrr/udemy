@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        label{
+            cursor: pointer;
+        }
+        fieldset {
+            background:rgb(53, 164, 255);
+            border: 2px solid black;
+        }
+        #legend {
+            font-weight: bold;
+            font-size: 18px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- METHOD
+    - GET: info na url
+    - POST: info escondidos -->
+    <form action="/HTML/564-formsEnviado.html" method="get" target="_blank" autocomplete="off">
+        <p>My form.</p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input autofocus type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </p>
+
+        <input type="number" min="2" placeholder="Quantidade.">
+
+        <p>
+            <label for="dev1">É um dev1?</label>
+            <input type="checkbox" id="dev1"><br>
+            <label for="dev2">É um dev2?</label>
+            <input type="checkbox" id="dev2"><br>
+            <label for="dev3">É um dev3?</label>
+            <input type="checkbox" id="dev3">
+        </p>
+
+        <p>
+            <label>Gênero:</label><br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino"><br>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="Masculino" name="genero" value="masculino"><br>
+        </p>
+
+
+        <p>
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" placeholder="date">
+        </p>
+
+        <p>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" placeholder="time">
+        </p>
+
+        <p>
+            <label for="color">Cor preferida:</label>
+            <input type="color" id="color" name="color">
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Ex: email@email.com" required>
+        </p>
+
+        <p>
+            <label for="file">Sua foto:</label>
+            <input type="file" id="file" name="file" accept=".jpeg">
+        </p>
+
+        <p>
+            <label for="password">Sua senha:</label>
+            <input pattern="{6,8}" title="Coloque no mínimo 4 e máximo 8" type="password" id="password" name="password" required>
+        </p>
+
+        <p>
+            <label for="select">Selecione uma opção:</label>
+            <select required>
+                
+                <option value="qualquer 1" Label="Label 1" selected>
+                <option value="qualquer 2" Label="Label 2">
+                <option value="qualquer 3" Label="Label 3">
+                <option value="qualquer 4" Label="Label 4">
+            </select>
+        </p>
+
+        <p>
+            <label for="pesquisar">Pesquisar ID:</label>
+                <input type="search" name="id" size="1"
+                pattern="[0-9] {2}"
+                title="Digite o número do ID. Ex: 23">
+        </p>
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+        </p>
+    </form>
+
+    <fieldset>
+        <legend id="legend">Dúvidas? Entre em contato</legend>
+        <label for="telefone-cont">Telefone: (00) 00000-0000</label>
+        <br>
+        <label for="email-cont">E-mail: email@email.com</label>
+    </fieldset>
+</body>
+</html>

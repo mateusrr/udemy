@@ -11,6 +11,7 @@ const timer = setInterval(function() {
     console.log(mostraHora())
 }, 1000)
 
+// exceuta apenas uma vez.
 setTimeout(function() {
     clearInterval(timer)
 }, 4000)

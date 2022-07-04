@@ -2,17 +2,20 @@
 // retorna um valor
 // termina a função
 
+//1
 function soma(a, b) {
     return a + b
 }
 console.log(soma(2,5))
 
+//2
 function criaPessoa(nome, sobrenome) {
     return {nome, sobrenome}
 }
 const p1 = criaPessoa('mateus', 'rocha')
 console.log(p1)
 
+//3
 // Retornando uma função dentro de outra função
 function criaMultiplicador(multiplicador) {
     return function(n) {

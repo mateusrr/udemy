@@ -12,14 +12,14 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--primary-color);
+  background: linear-gradient(90deg, rgb(6, 27, 133) 0%, rgba(70, 246, 252, 0.281) 100%);
   font-family: 'Open sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
 }
 
 .container {
-  max-width: 640px;
+  max-width: 450px;
   margin: 50px auto;
   background: #fff;
   padding: 20px;
@@ -48,7 +48,6 @@ form button {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
-  height: 50px;
   cursor: pointer;
   margin-top: 30px;
 }

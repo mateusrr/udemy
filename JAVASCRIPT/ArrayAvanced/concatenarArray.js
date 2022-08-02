@@ -34,7 +34,7 @@ console.log('3º ',nomeTerminaA)
 
 // MAP
 // Sempre vai ter o mesmo tamanho do Array original.
-/*
+
 const pessoas = [
     {nome: 'Maria', idade: 20},
     {nome: 'Maraje', idade: 21},
@@ -52,6 +52,6 @@ const comIds = pessoas.map(function(obj, indice) {
     return newObj
 })
 console.log(comIds)
-*/
+
 
 // REDUCE

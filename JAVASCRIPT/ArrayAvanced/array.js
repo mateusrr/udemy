@@ -1,9 +1,9 @@
 //String em Array
-/*
+
 const nome = 'Silvio Silva Salvador'
 const nomes = nome.split(' ')
 console.log(nomes)
-console.log(nome)*/
+console.log(nome)
 
 
 // Array em String

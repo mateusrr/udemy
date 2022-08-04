@@ -2,14 +2,14 @@
 function falaOi() {
     console.log('Oi')
 }
-falaOi
+falaOi()
 
 // First-class objects - pode tratar as funções como dados
 // Function express
 const dado = function(){
     console.log('Dado')
 }
-//dado()
+dado()
 
 // Uma função executando outra função no parâmetro
 function executaFuncao (funcao) {
@@ -21,3 +21,12 @@ executaFuncao(dado)
 const funcaoArrow = () => {
     console.log('Arrow function')
 }
+funcaoArrow()
+
+// Dentro de um objeto
+const obj = {
+    falar() {
+        console.log('estoy a falar...')
+    }
+}
+obj.falar()

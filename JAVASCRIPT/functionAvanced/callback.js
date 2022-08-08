@@ -1,4 +1,6 @@
-function rand(min = 1000, max = 3000) {
+//Função de callback é quando é chamado um comando após terminar outro.
+
+function rand(min = 1000, max = 3000) { //rand gerador de números aleatórios
     const num = Math.random() * (max - min) + min
     return Math.floor(num)
 }
@@ -12,7 +14,7 @@ function f1(callback) {
 }
 
 function f2(callback) {
-    setTimeout(function () {
+    setTimeout(function () { //setTimeout simulando ao que demoraria na internet
         console.log('f2')
         if (callback) callback()
     }, rand())
@@ -26,13 +28,13 @@ function f3(callback) {
 }
 
 //1º forma
-f1(function() {
+/*f1(function() {
     f2(function() {
         f3(function() {
             console.log('ola')
         })
     })
-})
+})*/
 
 //2º forma
 f1(f1Callback)

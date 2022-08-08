@@ -1,5 +1,5 @@
 function recursiva(max) {
-    if (max >= 10) return
+    if (max > 50) return
     max++
     console.log(max)
     recursiva(max)

@@ -1,12 +1,13 @@
-//Factory function
 function Calculadora() {
     this.display = document.querySelector('.display')
 
+    // arrow function
     this.inicia = () => {
         this.capturaCliques()
         this.enter()
     }
 
+    // arrow function
     this.enter = () => {
         document.addEventListener('keyup', e => {
             if (e.keyCode !== 13) return

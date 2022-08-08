@@ -14,7 +14,7 @@ function f1(callback) {
 }
 
 function f2(callback) {
-    setTimeout(function () { //setTimeout simulando ao que demoraria na internet
+    setTimeout(function () { //setTimeout simulando o que demoraria na internet
         console.log('f2')
         if (callback) callback()
     }, rand())

@@ -9,9 +9,9 @@ function criaPessoa(nome, sobrenome, a, p) {
         altura: a,
         peso: p,
         // GET faz com que o IMC se torne um atributo do objeto
-        get imc() {
+        get imc() { //GET faz com que o IMC se torne um atributo do objeto
             const indice = this.peso / (this.altura ** 2)
-            return indice.toFixed(2)
+            return indice.toFixed(2) //casas decimais
         }
     }
 }

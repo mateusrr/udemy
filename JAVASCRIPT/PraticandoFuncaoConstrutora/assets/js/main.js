@@ -1,3 +1,4 @@
+//Factory function
 function Calculadora() {
     this.display = document.querySelector('.display')
 

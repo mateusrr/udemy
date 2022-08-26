@@ -43,8 +43,8 @@ let cachorro = new Cachorro('Tantan')
 */
 
 class DispositivoEletronico {
-    constructor(nome) {
-        this.nome = nome
+    constructor(fabricante) {
+        this.fabricante = fabricante
         this.ligado = false
     }
 
@@ -66,12 +66,31 @@ class DispositivoEletronico {
     }
 }
 
-class Som extends DispositivoEletronico {
-    constructor(nome, tipo) {
-        super(nome)
-        this.tipo = tipo
+class Notebook extends DispositivoEletronico {
+    constructor(fabricante, modelo) {
+        super(fabricante)
+        this.modelo = modelo
     }
 }
 
-const s1 = new Som('Estéreo',  'Carro')
+class ControleRemoto extends DispositivoEletronico {
+    constructor(fabricante, Wifi, USB) {
+        super(fabricante)
+        this.Wifi = Wifi
+        this.USB = USB
+    }
+
+    ligar() {
+        if(this.Wifi === true) {
+            console.log('Controle remoto conectado via Wifi.')
+        } else {
+            console.log('Controle remoto conectado via USB.')
+        }
+    }
+}
+
+const s1 = new Notebook('Samsung',  'Expert X40')
 console.log(s1)
+
+const cr = new ControleRemoto('Xbox', false, true)
+console.log(cr)

@@ -10,9 +10,9 @@ const request = obj => {
         xhr.addEventListener('load', () => {
             if(xhr.status >= 200 && xhr.status < 300) {
             //callback de sucesso
-            obj.success(xhr.responseText)
+            resolve(xhr.responseText)
             } else {
-                obj.error(xhr.statusText)
+                rejected(xhr.statusText)
             }
         })
     })
@@ -28,18 +28,18 @@ document.addEventListener('click', e => {
     }
 })
 
-function carregaPag(el) {
+async function carregaPag(el) {
     const href = el.getAttribute('href')
     
     const objConfig = {
         method: 'GET',
         url: href,
-        success(response) {
-            carregaResultado(response)
-        },
-        error(errorText) {
-            console.log(errorText)
-        }
+    }
+    try{
+    const response = await request(objConfig)
+    carregaResultado(response)
+    } catch(e) {
+        console.log(e)
     }
 }
 

@@ -7,9 +7,9 @@ const request = obj => {
         xhr.open(obj.method, obj.url, true)
         xhr.send() //se fosse feito com POST teria que mandar os dados.
 
+        //checar quando a requisição levou para ocorrer.
         xhr.addEventListener('load', () => {
             if(xhr.status >= 200 && xhr.status < 300) {
-            //callback de sucesso
             resolve(xhr.responseText)
             } else {
                 rejected(xhr.statusText)
@@ -18,12 +18,15 @@ const request = obj => {
     })
 }
 
+//capturando os clicks
+//
 document.addEventListener('click', e => {
     const el = e.target
+    //garantindo que está pegando o nome de qualquer Tag e transformando para lower case.
     const tag = el.tagName.toLowerCase()
 
     if(tag === 'a') {
-        e.preventDefault()
+        e.preventDefault() //quando clicar no link não irá carregar uma nova página.
         carregaPag(el)
     }
 })

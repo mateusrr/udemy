@@ -1,0 +1,20 @@
+{
+  "name": "udemy",
+  "version": "1.0.0",
+  "description": "Práticas realizadas no curso de Javascript e Typescript do básico ao avançado, contendo também uma seção com HTML e CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateusrr/udemy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateusrr/udemy/issues"
+  },
+  "homepage": "https://github.com/mateusrr/udemy#readme"
+}

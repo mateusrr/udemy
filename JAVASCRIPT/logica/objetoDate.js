@@ -31,8 +31,9 @@ function formatDate(data) {
     const horas = zero(data.getHours())
     const min = zero(data.getMinutes())
     const seg = zero(data.getSeconds())
+    const day = zero(data.getDay())
 
-    return `${dia} ${mês} ${ano} ${horas}:${min}:${seg}`
+    return `${dia} ${mês} ${ano} ${horas}:${min}:${seg} - ${day}`
 }
 
 const data = new Date()

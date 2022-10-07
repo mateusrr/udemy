@@ -8,21 +8,21 @@ console.log(rand())
 
 function f1(callback) {
     setTimeout(function () {
-        console.log('f1')
+        console.log('um')
         if (callback) callback()
     }, rand())
 }
 
 function f2(callback) {
     setTimeout(function () { //setTimeout simulando o que demoraria na internet
-        console.log('f2')
+        console.log('dois')
         if (callback) callback()
     }, rand())
 }
 
 function f3(callback) {
     setTimeout(function () {
-        console.log('f3')
+        console.log('tres')
         if (callback) callback()
     }, rand())
 }

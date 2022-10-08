@@ -63,7 +63,33 @@ const comIds = pessoas.map(function(obj, indice) {
     newObj.id = indice //(indice + 1) * 1000
     return newObj
 })
-console.log(comIds)
+console.log(idades)
+*/
+/*
+const produtos = [10, 20, 30]
+const desconto = produtos.map(dsc => {
+    return dsc * 0.9;
+})
+console.log(desconto)
+console.log(produtos)
 */
 
 // REDUCE
+/*
+const faturamento = [100, 100, 200, 500]
+const somatorio = faturamento.reduce((total, val) => {return total + val}, 0)
+console.log(somatorio)
+*/
+
+const colaboradores = [
+    {nome: 'id1', departamento: 'financeiro', salario: 1200},
+    {nome: 'id2', departamento: 'financeiro', salario: 1600},
+    {nome: 'id3', departamento: 'adm', salario: 1200},
+]
+
+const total = colaboradores
+    .filter(colaboradores => (colaboradores.departamento === 'financeiro'))
+    .map(item => item.salario *= 1.5)
+    .reduce((total, val) => total + val)
+
+    console.log(total)

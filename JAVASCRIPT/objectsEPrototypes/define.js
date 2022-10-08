@@ -42,7 +42,7 @@ function Produto(nome, preco, estoque) {
                 return
             }*/
             if(typeof valor !== 'number') {
-                throw new TypeError('error')
+                throw new TypeError('arruma isso ai meu')
             }
             estoquePriv = valor
         }
@@ -50,5 +50,5 @@ function Produto(nome, preco, estoque) {
 }
 
 const p1 = new Produto('Camiseta', 20, 3)
-p1.estoque = 500
+p1.estoque = 10
 console.log(p1.estoque)

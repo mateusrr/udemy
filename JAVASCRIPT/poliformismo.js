@@ -61,3 +61,5 @@ ContaPoupanca.prototype.constructor = ContaPoupanca
 
 const corrente = new ContaCorrente(11, 22, 0, 100)
 const poupanca = new ContaPoupanca(30, 01, 700, 150)
+
+console.log(corrente, poupanca)

@@ -44,9 +44,8 @@ function ValidaCPF(cpfEnviado) {
     }, 0)
   
     const digito = 11 - (total % 11)
-    console.log(digito)
   }
   
   
-  const cpf = new ValidaCPF('031.615.381-88')
+  const cpf = new ValidaCPF('031.615.381-991')
   console.log(cpf.valida())

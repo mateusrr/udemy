@@ -68,7 +68,7 @@ ValidaCPF.prototype.isSequencia = function() {
     const sequencia = this.cpfLimpo[0].repeat(this.cpfLimpo.length)
     return sequencia === this.cpfLimpo
 }
-const cpf = new ValidaCPF('031.615.381-88')
+const cpf = new ValidaCPF('031.615.381-81')
 if (cpf.valida()) {
     console.log('cpf válido')
 } else 
